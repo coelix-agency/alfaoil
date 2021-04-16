@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /raws/ug-sm
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /raws/alfa-oil/index.php [L]
+</IfModule>
+
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /raws/kabare
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /raws/kabare/index.php [L]
+#</IfModule>

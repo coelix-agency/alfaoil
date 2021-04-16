@@ -1,0 +1,20 @@
+.button{
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FC8B00;
+    background: transparent;
+    font: 600 18px 'Montserrat';
+    color: #4f4f4f;
+    cursor: pointer;
+    transition: background-color 0.2s, color .2s;
+    &:hover {
+        background-color: #FC8B00;
+        color: #ffffff;
+    }
+}

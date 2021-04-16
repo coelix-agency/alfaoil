@@ -1,0 +1,122 @@
+/** Global **/
+.text-uppercase {
+    text-transform: uppercase;
+}
+/** Lang **/
+.user-navigation .lang ul {
+    background-color: #fff;
+}
+/** Nav **/
+.nav .current-menu-item,
+.nav .current-menu-item a{
+    color: #FC8B00;
+}
+/** Footer **/
+.footer .phones-wrapper ul a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 18px;
+    transition: color .2s linear;
+    font-weight: 600;
+}
+.footer .phones-wrapper img,
+.footer .phones-wrapper .svg {
+    display: inline-block;
+    width: 73px;
+    text-align: right;
+    margin-right: 18px;
+}
+.footer .container-m .footer-top .footer-contacts {
+    width: 70% !important;
+}
+.footer .your-email input {
+    width: calc(300px + (300 - 250) * (100vw - 1920px) / (1920 - 320));
+}
+.footer .container-m .footer-top .footer-address-wrap {
+    max-width: 300px !important;
+}
+.footer.container-m.footer-top.connection-form-wrap {
+    width: 30% !important;
+}
+.footer .phones-wrapper ul a {
+    margin-bottom: 0 !important;
+}
+.footer .connection-form .mart {
+    width: 350px !important;
+}
+@media (max-width: 1440px) {
+    .footer .container-m .footer-top {
+        margin-top: 20px !important;
+    }
+}
+@media (max-width: 1280px) {
+    .footer .container-m .footer-top .footer-contacts {
+        width: 100% !important;
+    }
+}
+@media (max-width: 800px) {
+    .footer .phones-wrapper img,
+    .footer .phones-wrapper .svg {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer .phones-wrapper li {
+        text-align: right;
+    }
+    .footer .phones-wrapper li a {
+        display: inline;
+    }
+}
+@media (max-width: 400px) {
+    .footer .footer-bottom .mart {
+        font-size: 13px !important;
+    }
+}
+/**
+ * Go-to-next-section in Front Page
+ */
+ @media (max-width: 992px) {
+    .promo-section .go-to-next-section {
+        left: 35px;
+    }
+}
+
+/**
+ * Contact Form 7
+ */
+.wpcf7 .screen-reader-response,
+.wpcf7-response-output{
+    display: none !important;
+}
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+.wpcf7-not-valid-tip{
+    color: #fb8080;
+    font-size: 11px;
+    line-height: 13px;
+    white-space: nowrap;
+    margin: 6px 0 0 0;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+.wpcf7-not-valid {
+    border-color: #fb8080 !important;
+}
+
+/** **/
+.about-company-container .about-company-bottom-section .about-company-img-wrapper .refueling img {
+    height: auto !important;
+}
+
+/** Home **/
+.services-section .services-section-bottom-title span {
+    color: rgba(252,139,0,.5);
+}

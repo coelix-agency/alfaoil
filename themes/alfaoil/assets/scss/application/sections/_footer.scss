@@ -1,0 +1,375 @@
+.footer {
+    background-color: #F9F9F9;
+    padding: 120px 0;
+    position: relative;
+    @media (max-width: 1440px) {
+        padding: 80px 0;
+    }
+    @media (max-width: 1280px) {
+        padding: 60px 0;
+    }
+    @media (max-width: 992px) {
+        padding: 50px 0;
+    }
+}
+
+.footer-top-logo {
+    img {
+        height: 50px;
+    }
+}
+
+.footer-top {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1440px) {
+        margin-top: 80px;
+    }
+    @media (max-width: 1280px) {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: -10px;
+    margin-right: 20px;
+    @media (max-width: 1280px) {
+        justify-content: space-between;
+        max-width: 100%;
+        margin-right: -10px;
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+}
+
+.footer-contacts-item {
+    padding: 0 10px;
+    width: 38%;
+    flex-shrink: 0;
+    @media (max-width: 1280px) {
+        width: 33.333%;
+    }
+    @media (max-width: 1000px) {
+        width: 37%;
+    }
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        align-items: flex-start;
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+.footer-site-map {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    @media (max-width: 1280px) {
+        width: 33.333%;
+    }
+    @media (max-width: 1000px) {
+        width: 26%;
+    }
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        order: 3;
+        margin-top: 40px;
+    }
+    h2 {
+        font: 600 18px 'Montserrat';
+        letter-spacing: 0.03em;
+        color: #4F4F4F;
+        margin-bottom: 25px;
+    }
+    li {
+        margin-bottom: 17px;
+    }
+    a {
+        font: 400 16px 'Montserrat';
+        letter-spacing: 0.03em;
+        color: #4F4F4F;
+        transition: 0.2s;
+        &:hover{
+            color: #FC8B00;
+        }
+    }
+}
+
+.phones-wrapper {
+    display: flex;
+    flex-direction: column;
+    .phones {
+        display: flex;
+        flex-direction: column;
+        @media (max-width:768px) {
+            align-items: flex-end;
+        }
+    }
+    h2 {
+        font: 600 18px 'Montserrat';
+        letter-spacing: 0.03em;
+        color: #4F4F4F;
+        margin-bottom: 25px;
+        @media (max-width: 768px) {
+            text-align: right;
+        }
+        @media (max-width: 600px) {
+            text-align: left;
+        }
+    }
+    // p {
+    //     font: 600 16px 'Montserrat';
+    //     letter-spacing: 0.03em;
+    //     color: #4F4F4F;
+    //     margin-bottom: 18px;
+    // }
+}
+.phones-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    transition: color .2s linear;
+    font-weight: 600;
+    &:hover {
+        color: $primary-color;
+    }
+}
+.phones-right {
+    display: inline-block;
+    width: 73px;
+    text-align: right;
+    margin-right: 18px;
+}
+.footer-address-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font: 600 18px Montserrat;
+        letter-spacing: .03em;
+        color: transparent;
+        margin-bottom: 25px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    @media (max-width: 680px) {
+        flex-direction: column-reverse;
+    }
+    .social {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin-left: 0;
+            margin-bottom: 18px;
+        }
+        a {
+            @media (max-width: 768px) {
+                margin-left: 0;
+            } 
+        }
+        span {
+            @media (max-width: 768px) {
+                margin-left: 23px;
+            } 
+        }
+    }
+    .footer-mail, .footer-street{
+        display: flex;
+        margin-bottom: 27px;
+        align-items: flex-start;
+        @media (max-width: 768px) {
+            margin-bottom: 18px;
+        }
+    }
+    p, a, .footer-address-street {
+        font: 400 16px 'Montserrat';
+        color: #4F4F4F;
+        margin-left: 23px;
+        @media (max-width: 320px) {
+            font: 400 12px 'Montserrat';
+            margin-left: 10px;
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .letter, .mark {
+        width: 23px;
+    }
+}
+.connection-form-wrap {
+    width: 25%;
+    @media (max-width:1280px) {
+        width: 100%;
+    }
+    @media (max-width:768px) {
+        text-align: center;
+    }
+}
+.connection-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (max-width: 1280px) {
+        margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 30px;
+        align-items: center;
+    }
+    .email-wrapper {
+        display: flex;
+        margin: 50px 0 36px;
+        box-sizing: border-box;
+        @media (max-width:1280px) {
+            margin-top: 25px;
+        }
+        @media (max-width:768px) {
+            margin-bottom: 0;
+            margin-top: 15px;
+        }
+        @media (max-width:400px) {
+            width: 100%;
+        }
+        input {
+            width: 350px;
+            height: 71px;
+            border: 1px solid #BDBDBD;
+            background: none;
+            padding: 25px;
+            font: 400 16px 'Montserrat';
+            color: #333333;
+            max-width: 100%;
+            &:focus {
+                background-color: #FFFFFF;
+                box-shadow: 0 0 10px #BDBDBD;
+            }
+            @media (max-width: 1280px) {
+                width: 288px;
+                height: 50px;
+            }
+            @media (max-width: 680px) {
+                max-width: 238px;
+            }
+            @media (max-width:400px) {
+                max-width: 100%;
+            }
+        }
+        button{
+            flex-shrink: 0;
+            height: 71px;
+            width: 71px;
+            border: 1px solid #BDBDBD;
+            border-left: none;
+            background: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            @media (max-width: 1280px) {
+                height: 52px;
+                width: 50px;
+            }
+            svg path {
+                transition: 0.2s;
+            }
+            &:hover{
+                background-color: #FC8B00;
+                svg path {
+                    fill: white;
+                }
+            }
+        }
+    }
+    .email-label{
+        font: 600 18px 'Montserrat';
+        letter-spacing: 0.03em;
+        color: #333333;
+        @media (max-width: 320px) {
+            font: 600 14px 'Montserrat';
+        }
+    }
+    .social {
+        @media (max-width: 768px) {
+            display: none;
+        } 
+    }
+    .mart {
+        position: absolute;
+        left: 0;
+        bottom: -160px;
+        @media (max-width: 1280px) {
+            display: none;
+        }
+    }
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .ceo-text{
+        max-width: 710px;
+        width: 100%;
+        font: 400 14px 'Montserrat';
+        color: #4F4F4F;
+        letter-spacing: 0.03em;
+        line-height: 22px;
+        margin-top: 115px;
+        @media (max-width: 1280px) {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+        @media (max-width: 320px) {
+            font: 400 12px 'Montserrat';
+            line-height: 18px;
+        }
+        .read-more {
+            font: 500 14px 'Montserrat';
+            text-decoration: underline;
+            @media (max-width: 320px) {
+                font: 500 12px 'Montserrat';
+            }
+        }
+    }
+    .mart {
+        display: none;
+        @media (max-width: 1280px) {
+            display: flex;
+            margin-top: 20px;
+        }
+    }
+}
+
+.mart {
+    display: flex;
+    font: 400 16px 'Montserrat';
+    letter-spacing: 0.03em;
+    color: #333333;
+    &:hover {
+        text-decoration: underline;
+    }
+    img {
+        margin-left: 10px;
+    }
+}

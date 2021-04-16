@@ -1,0 +1,280 @@
+.page-contacts-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    @media (max-width: 1280px) {
+        margin-bottom: 60px;
+    }
+    @media (max-width: 320px) {
+        margin-bottom: 0;
+        padding-top: 60px;
+    }
+}
+
+.contacts-top-section {
+    display: flex;
+    align-items: center;
+    margin: 35px auto 0;
+    width: 100%;
+    max-width: 1776px;
+    height: 351px;
+    padding-top: 100px;
+    background-image: url("includes/images/contacts-top-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    @media (max-width: 800px) {
+        height: 320px;
+        background-image: url("includes/images/contacts-top-bg.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    @media (max-width: 320px) {
+        height: 244px;
+        margin-top: 83px;
+    }
+    .contacts-top-section-container {
+        width: 100%;
+        max-width: 1313px;
+        margin: 0 auto;
+        @media (max-width: 1480px) {
+            padding: 0 20px;
+        }
+    }
+    p {
+        font: 400 12px 'Montserrat';
+        letter-spacing: 0.02em;
+        margin-bottom: 25px;
+        span {
+            @media (max-width: 320px) {
+                color: #888888;
+            }
+        }
+        @media (max-width: 800px) {
+            margin-bottom: 25px;
+        }
+        @media (max-width: 320px) {
+            position: absolute;
+            top: 0;
+            left: 16px;
+            font: 400 10px 'Montserrat';
+            color: #544D4D;
+        }
+    }
+    h2 {
+        font: 700 44px 'Montserrat';
+        letter-spacing: 0.03em;
+        @media (max-width: 800px) {
+            font: 700 34px 'Montserrat';
+        }
+        @media (max-width: 320px) {
+            position: absolute;
+            top: 30px;
+            left: 16px;
+            font: 600 18px 'Montserrat';
+            color: #333333;
+        }
+    }
+}
+
+.contacts-bottom-section {
+    display: flex;
+    margin: 0 auto 0;
+    max-width: 1368px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    h3 {
+        font: 600 22px 'Montserrat';
+        color: #333333;
+        letter-spacing: 0.02em;
+        line-height: 25px;
+        @media (max-width: 768px) {
+            font: 600 16px 'Montserrat';
+            line-height: 24px;
+        }
+    }
+}
+
+.contacts-bottom-section-left {
+    margin-right: 100px;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 529px;
+    background-color: #F9F9F9;
+    @media (max-width: 992px) {
+        margin-right: 40px;
+    }
+    @media (max-width: 800px) {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+        position: relative;
+        top: -140px;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 20px 12px 0 12px;
+    }
+    p:nth-child(4) {
+        margin-bottom: 0;
+    }
+    .contact-section {
+        .phones {
+            margin-top: 30px;
+            li:nth-child(4) {
+                margin-top: 50px;
+                font-weight: 400;
+            }
+        }
+        .letter,
+        .mark {
+            margin-right: 23px;
+        }
+    }
+}
+
+.contacts-bottom-section-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    @media (max-width: 768px) {
+        margin-top: -100px;
+    }
+    @media (max-width: 320px) {
+        margin-top: 0;
+    }
+    p {
+        font: 500 16px 'Montserrat';
+        line-height: 25px;
+        color: #333333;
+        @media (max-width: 320px) {
+            font: 500 14px 'Montserrat';
+            color: #4F4F4F;
+        }
+    }
+    p:nth-child(2) {
+        margin-top: 10px;
+    }
+    @media (max-width: 320px) {
+        position: relative;
+        top: -120px;
+    }
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    input {
+        width: 100%;
+        height: 70px;
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        padding-left: 20px;
+        font: 500 16px 'Montserrat';
+        color: rgba(51, 51, 51, 0.5);
+        &:focus {
+            box-shadow: 0 0 10px #BDBDBD;
+        }
+        @media (max-width: 320px) {
+            height: 50px;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 106px;
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        font: 500 16px 'Montserrat';
+        color: rgba(51, 51, 51, 0.5);
+        &:focus {
+            box-shadow: 0 0 10px #BDBDBD;
+        }
+        @media (max-width: 320px) {
+            height: 71px;
+        }
+    }
+    .contacts-form-top,
+    .contacts-form-middle {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1280px) {
+            flex-direction: column;
+        }
+        @media (max-width: 800px) {
+            flex-direction: row;
+        }
+        @media (max-width: 680px) {
+            flex-direction: column;
+        }
+        input:last-child {
+            margin-left: 20px;
+            @media (max-width: 1280px) {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            @media (max-width: 800px) {
+                margin-left: 20px;
+                margin-top: 0;
+            }
+            @media (max-width: 680px) {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+    .contacts-form-middle {
+        margin-top: 20px;
+    }
+    .mandatory-comment {
+        font: 500 12px 'Montserrat';
+        color: rgba(79, 79, 79, 0.8);
+        margin-top: 30px;
+        @media (max-width: 320px) {
+            display: none;
+        }
+    }
+    .agree-container {
+        display: flex;
+        margin-top: 30px;
+        .agree-checkbox {
+            width: 20px;
+            height: 20px;
+        }
+        label {
+            margin-left: 12px;
+            font: 500 12px 'Montserrat';
+            color: rgba(79, 79, 79, 0.8);
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .submit-but {
+        width: 246px;
+        height: 73px;
+        margin-top: 50px;
+        background-color: #FFFFFF;
+        border: 1px solid #FC8B00;
+        color: #FC8B00;
+        padding-left: 0;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            background-color: #FC8B00;
+            color: #FFFFFF;
+        }
+        @media (max-width: 320px) {
+            width: 100%;
+            height: 53px;
+        }
+    }
+}

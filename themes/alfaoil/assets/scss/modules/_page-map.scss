@@ -1,0 +1,70 @@
+.page-map-container {
+   padding-top: 80px;
+    @media (max-width: 768px) {
+        padding-top: 60px;
+    }
+    .container-xl {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.map-title-container {
+    max-width: 1776px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    @media (max-width: 320px) {
+        padding: 0 16px;
+    }
+    .page-address-over-title {
+        font: 400 12px 'Montserrat';
+        color: #544D4D;
+        @media (max-width: 320px) {
+            font: 400 10px 'Montserrat';
+        }
+        a {
+            color: #888888;
+        }
+    }
+    .page-map-title {
+        font: 700 44px 'Montserrat';
+        color: #333333;
+        @media (max-width: 768px) {
+            font: 600 26px 'Montserrat';
+        }
+        @media (max-width: 320px) {
+            font: 600 18px 'Montserrat';
+        }
+    }
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+}
+
+.map-azs {
+    width: 100%;
+    border: none;
+    @media (max-width: 768px) {
+        height: 700px;
+    }
+    @media (max-width: 320px) {
+        height: 400px;
+    }
+}
+
+.mapTitle {
+    position: absolute;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+    display: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    font: 300 12px 'Montserrat';;
+}
